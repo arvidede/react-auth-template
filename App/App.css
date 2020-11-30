@@ -1,0 +1,54 @@
+.app {
+  text-align: center;
+  color: var(--secondary);
+  /*min-height: calc(100vh - 3rem);*/
+  min-width: 100vw;
+  font-family: var(--main_font);
+  padding-top: 3rem;
+}
+
+.row,
+.col {
+  display: flex;
+}
+
+.col {
+  flex-direction: column;
+}
+
+
+.button {
+    appearance: none;
+    text-transform: uppercase;
+    border-radius: 2px;
+    border: none;
+    background-color: var(--misc);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 16px;
+    vertical-align: middle;
+    tap-highlight-color: transparent;
+    color: var(--secondary);
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    outline: 0;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+        0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.button:disabled {
+    opacity: 0.75;
+    background-color: #ccc;
+}
+
+.button:not(:disabled):hover {
+    filter: brightness(1.05);
+    cursor: pointer;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12),
+        0 3px 1px -1px rgba(0, 0, 0, 0.2);
+}
